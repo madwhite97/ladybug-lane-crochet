@@ -519,16 +519,37 @@
   }
 
   .coming-page .coming-left-decor {
-    width: min(155px, 85%);
-    margin-top: 30px;
+    display: none;
   }
 
   .coming-page .coming-right-group {
-    width: min(185px, 90%);
-    margin-top: 30px;
+    grid-column: 1 / -1;
+    grid-row: 4;
+
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+
+    justify-self: center;
+    align-self: start;
+
+    width: min(280px, 78vw);
+    max-width: 100%;
+    margin: 24px auto 0;
+
+    transform: none;
+  }
+
+  .coming-page .coming-right-decor {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
 
   .coming-page .coming-bottom-wave {
-    margin-top: 20px;
+    margin-top: 24px;
   }
 }

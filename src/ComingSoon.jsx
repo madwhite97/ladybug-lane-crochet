@@ -91,11 +91,11 @@ function ComingSoon() {
                 {/* Description */}
                 <p className="coming-description">
                     We're busy stitching up something special!
-                    <br />
+                    {" "}<br />
                      Follow along soon for
-                    <br />
+                    {" "}<br />
                     crochet inspiration, new products, behind the scenes,
-                    <br />
+                    {" "}<br />
                     and a little more handmade happiness.
                 </p>
 
