@@ -1,0 +1,534 @@
+.coming-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 250, 238, 0.75),
+            transparent 58%
+        ),
+        #fffdf8;
+
+    color: #566149;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 55px;
+    padding-bottom: 0;
+}
+
+/* ====================
+    LOGO
+==================== */
+
+.coming-logo-wrap {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-bottom: 95px;
+}
+
+.coming-logo {
+    width: 390px;
+    max-width: 72vw;
+    height: auto;
+    display: block;
+}
+
+/* ====================
+    MAIN CONTENT
+==================== */
+
+.coming-content {
+    position: relative;
+    z-index: 4;
+
+    width: min(900px, 90%);
+    text-align: center;
+}
+
+/* ====================
+    COMING SOON TITLE
+==================== */
+
+.coming-title-svg {
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+}
+
+.coming-title-text {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 138px;
+    font-weight: 600;
+
+    fill: #566149;
+}
+
+.coming-title-heart {
+    position: absolute;
+
+    width: 125px;
+    height: auto;
+
+    right: -15px;
+    top: 65px;
+
+    transform: rotate(7deg);
+
+    z-index: 2;
+}
+
+.coming-title-positioner {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+
+    top: -120px;
+}
+
+.coming-title-heart {
+    position: absolute;
+    width: 142px;
+    height: auto;
+
+    right: -140px;
+    top: 60%;
+
+    transform: translateY(-50%) rotate(8deg);
+}
+
+/* =====================
+    STAY TUNED
+==================== */
+
+.coming-stay-tuned {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    gap: 24px;
+
+    position: relative;
+    top: -85px;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.coming-stay-tuned span {
+    display: block;
+
+    width: 115px;
+    height: 2px;
+
+    background: #df9691;
+}
+
+.coming-stay-tuned p {
+    margin: 0;
+
+    color: #df9691;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.42em;
+}
+
+/* ====================
+    DESCRIPTION
+==================== */
+
+.coming-description {
+    margin: 25px auto 0;
+
+    font-size: clamp(1.2rem, 1.7vw, 1.65rem);
+    line-height: 1.45;
+
+    color: #66705a;
+
+    position: relative;
+    z-index: 5;
+}
+
+
+
+/* ====================
+    LEFT DECORATION
+==================== */
+
+.coming-left-decor {
+    position: absolute;
+
+    left: 3%;
+    bottom: 380px;
+
+    width: clamp(220px, 19vw, 340px);
+    height: auto;
+
+    z-index: 3;
+}
+
+/* ====================
+    RIGHT DECORATION
+===================== */
+
+.coming-right-group {
+    position: absolute;
+
+    right: 3%;
+    bottom: 340px;
+
+    width: clamp(420px, 26vw, 410px);
+
+    z-index: 3;
+}
+
+.coming-right-decor {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ====================
+    YELLOW WAVE BOTTOM
+===================== */
+
+.coming-bottom-wave {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    margin-top: 75px;
+    margin-bottom: 0;
+
+    pointer-events: none;
+}
+
+/* ====================
+    BACK TO HOME
+==================== */
+
+.coming-back-home {
+    position: absolute;
+    top: 45px;
+    left: 55px;
+    z-index: 20;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    border: 1.5px solid #d9a09a;
+    border-radius: 999px;
+
+    background: rgba(255, 253, 248, 0.8);
+
+    color: #566149;
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.coming-back-home span {
+    color: #d9908d;
+    font-size: 1.25rem;
+
+    transition: transform 0.25s ease;
+}
+
+.coming-back-home:hover {
+    background: #fbe5df;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(217, 144, 141, 0.15);
+}
+
+.coming-back-home:hover span {
+    transform: translateX(-4px);
+}
+
+/* ====================
+   COMING SOON — TABLET
+==================== */
+
+@media (max-width: 1050px) {
+  .coming-page {
+    min-height: 100vh;
+    min-height: 100svh;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: start;
+    align-items: start;
+    justify-items: center;
+
+    padding: 24px 0 0;
+  }
+
+  /* Back link gets its own row */
+
+  .coming-page .coming-back-home {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    grid-column: 1 / -1;
+    justify-self: start;
+
+    min-height: 44px;
+    margin: 0 24px 20px;
+    padding: 10px 18px;
+
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+  }
+
+  /* Logo */
+
+  .coming-page .coming-logo-wrap {
+    grid-column: 1 / -1;
+
+    width: calc(100% - 40px);
+    margin-bottom: 28px;
+  }
+
+  .coming-page .coming-logo {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Main content */
+
+  .coming-page .coming-content {
+    grid-column: 1 / -1;
+
+    width: min(760px, calc(100% - 48px));
+    min-width: 0;
+  }
+
+  /* Scale the complete curved SVG title */
+
+  .coming-page .coming-title-positioner {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 55px;
+  }
+
+  .coming-page .coming-title-arch {
+    width: 100%;
+  }
+
+  .coming-page .coming-title-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1000 / 260;
+  }
+
+  .coming-page .coming-title-heart {
+    width: 70px;
+    height: auto;
+
+    top: 60%;
+    right: 0;
+    margin: 0;
+
+    transform: translateY(-50%) rotate(8deg);
+  }
+
+  /* Stay tuned */
+
+  .coming-page .coming-stay-tuned {
+    top: auto;
+    width: 100%;
+    margin: 18px auto 0;
+    gap: 18px;
+  }
+
+  .coming-page .coming-stay-tuned span {
+    width: 75px;
+    flex: 0 1 75px;
+  }
+
+  .coming-page .coming-stay-tuned p {
+    flex-shrink: 0;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+  }
+
+  /* Description */
+
+  .coming-page .coming-description {
+    width: 100%;
+    max-width: 620px;
+    margin: 26px auto 0;
+
+    font-size: 1.15rem;
+    line-height: 1.7;
+  }
+
+  /* Artwork sits below the content in two columns */
+
+  .coming-page .coming-left-decor {
+    position: relative;
+    left: auto;
+    bottom: auto;
+
+    grid-column: 1;
+    grid-row: 4;
+    align-self: end;
+    justify-self: center;
+
+    width: min(210px, 80%);
+    height: auto;
+    margin: 35px 0 0;
+  }
+
+  .coming-page .coming-right-group {
+    position: relative;
+    right: auto;
+    bottom: auto;
+
+    grid-column: 2;
+    grid-row: 4;
+    align-self: end;
+    justify-self: center;
+
+    width: min(260px, 85%);
+    margin: 35px 0 0;
+  }
+
+  .coming-page .coming-right-decor {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Bottom wave */
+
+  .coming-page .coming-bottom-wave {
+    grid-column: 1 / -1;
+
+    width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+  }
+}
+
+/* ====================
+   COMING SOON — MOBILE
+==================== */
+
+@media (max-width: 650px) {
+  .coming-page {
+    padding-top: 16px;
+  }
+
+  .coming-page .coming-back-home {
+    margin: 0 16px 22px;
+    padding: 10px 15px;
+
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+  }
+
+  .coming-page .coming-logo-wrap {
+    width: calc(100% - 40px);
+    margin-bottom: 24px;
+  }
+
+  .coming-page .coming-logo {
+    width: 250px;
+    max-width: 85%;
+  }
+
+  .coming-page .coming-content {
+    width: calc(100% - 32px);
+  }
+
+  .coming-page .coming-title-positioner {
+    padding-right: 30px;
+  }
+
+  .coming-page .coming-title-heart {
+    width: 42px;
+    top: 64%;
+    right: 0;
+  }
+
+  .coming-page .coming-stay-tuned {
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  .coming-page .coming-stay-tuned span {
+    width: 40px;
+    flex-basis: 40px;
+  }
+
+  .coming-page .coming-stay-tuned p {
+    font-size: 0.8rem;
+    letter-spacing: 0.24em;
+  }
+
+  .coming-page .coming-description {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 22px;
+
+    font-size: 1rem;
+    line-height: 1.75;
+    text-wrap: pretty;
+  }
+
+  /* Let the paragraph wrap naturally */
+
+  .coming-page .coming-description br {
+    display: none;
+  }
+
+  .coming-page .coming-left-decor {
+    width: min(155px, 85%);
+    margin-top: 30px;
+  }
+
+  .coming-page .coming-right-group {
+    width: min(185px, 90%);
+    margin-top: 30px;
+  }
+
+  .coming-page .coming-bottom-wave {
+    margin-top: 20px;
+  }
+}
