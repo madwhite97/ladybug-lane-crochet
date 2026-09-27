@@ -580,4 +580,17 @@
     text-align: center;
     text-decoration: none;
   }
+
+  .cart-page .cart-checkout-desktop {
+    display: none;
+  }
+
+  .cart-page .cart-checkout-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+  }
 }

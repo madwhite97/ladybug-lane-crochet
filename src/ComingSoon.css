@@ -583,3 +583,31 @@
     margin-top: -36px;
   }
 }
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  .coming-page .coming-left-decor {
+    width: min(250px, 90%);
+    height: auto;
+
+    justify-self: start;
+    margin-left: 12px;
+
+    transform: translateY(100px);
+    z-index: 3;
+  }
+
+  .coming-page .coming-right-group {
+    width: min(310px, 95%);
+  }
+
+  .coming-page .coming-right-group picture {
+    display: block;
+    width: 100%;
+  }
+
+  .coming-page .coming-right-decor {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

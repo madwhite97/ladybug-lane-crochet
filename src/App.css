@@ -2631,3 +2631,41 @@ body {
     transform: none;
   }
 }
+
+@media (min-width: 651px) and (max-width: 1050px) {
+  .home-page .hero-visual {
+    background: transparent;
+    box-shadow: none;
+    isolation: isolate;
+  }
+
+  .home-page .hero-image-wrap {
+    box-shadow: none;
+  }
+
+  .home-page .hero-visual::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    border-radius:
+      38% 62% 43% 57%
+      / 31% 38% 62% 59%;
+
+    background: rgba(245, 207, 199, 0.4);
+    filter: blur(22px);
+    transform: scale(1.04);
+
+    pointer-events: none;
+  }
+
+  .home-page .footer-top > .footer-brand {
+    margin-top: -35px !important;
+    margin-bottom: -35px !important;
+  }
+
+  .home-page .footer-tagline {
+    display: none;
+  }
+}
