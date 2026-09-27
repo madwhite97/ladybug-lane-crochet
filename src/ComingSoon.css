@@ -610,4 +610,18 @@
     width: 100%;
     height: auto;
   }
+
+  .coming-page .coming-left-decor,
+  .coming-page .coming-right-group {
+    margin-top: 10px;
+  }
+
+  .coming-page .coming-right-group {
+    transform: translateY(60px);
+  }
+
+  .coming-page .coming-logo-wrap {
+    margin-top: -25px;
+    margin-bottom: 3px;
+  }
 }

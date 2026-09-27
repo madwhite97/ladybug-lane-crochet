@@ -2668,4 +2668,32 @@ body {
   .home-page .footer-tagline {
     display: none;
   }
+
+  .home-page .hero-corner-flowers {
+    width: 190px;
+    height: 140px;
+  }
+
+  .home-page .hero-corner-floewr-large {
+    width: 110px;
+    height: auto;
+  }
+
+  .home-page .hero-corner-flower-small {
+    width: 85px;
+    height: auto;
+  }
+
+  .home-page .favorite-button.is-favorite {
+    font-size: 0;
+    color: #c06f68;
+  }
+
+  .home-page .favorite-button.is-favorite::before {
+    content: "\2665\FE0E";
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+    line-height: 1;
+    color: #c96f68;
+  }
 }

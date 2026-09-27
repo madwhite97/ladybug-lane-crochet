@@ -1697,4 +1697,14 @@
     margin: 0;
     white-space: nowrap;
   }
+
+  .shop-page .shop-hero-note v{
+    margin-top: -85px;
+    margin-bottom: -85px;
+  }
+
+  .shop-page .shop-footer .shop-footer-flowers,
+  .contact-page .shop-footer .shop-footer-flowers {
+    bottom: 35px;
+  }
 }

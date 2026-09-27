@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { FiTrash2 } from "react-icons/fi"
 import "./Cart.css"
 
@@ -57,6 +57,10 @@ function Cart() {
         (total, item) => total + item.quantity,
         0
     )
+
+
+
+    const navigate = useNavigate()
 
     return (
         <main className="cart-page">
@@ -182,6 +186,11 @@ function Cart() {
                         <button
                             type="button"
                             className="cart-checkout cart-checkout-desktop"
+                            onClick={() => {
+                                if (window.matchMedia("(max-width: 1050px)").matches) {
+                                    navigate("/coming-soon")
+                                }
+                            }}
                         >
                             CHECKOUT →
                         </button>

@@ -1756,4 +1756,24 @@
     width: 100px;
     height: auto;
   }
+
+  .contact-page .contact-hero-note {
+    margin-top: -65px;
+    margin-bottom: -75px;
+  }
+
+  .contact-page .contact-image-doodle {
+    top: 20px;
+    right: -20px;
+  }
+
+  .contact-page .contact-form-heart {
+    width: 80px;
+    height: auto;
+  }
+
+  .shop-page .shop-footer .shop-footer-flowers,
+  .contact-page .shop-footer .shop-footer-flowers {
+    bottom: 35px;
+  }
 }
