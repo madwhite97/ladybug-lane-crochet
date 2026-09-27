@@ -2511,3 +2511,88 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Polishes & Overrides */
+
+.home-page .brand > picture {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .home-page .brand {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+  }
+
+  .home-page .brand-logo {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    transform: none;
+  }
+
+  .shop-page .shop-navbar,
+  .contact-page .contact-navbar {
+    row-gap: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .shop-page .shop-nav-left,
+  .contact-page .contact-nav-left {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    gap: 8px;
+  }
+
+  .shop-page .shop-nav-right,
+  .contact-page .contact-nav-right {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) 44px;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .shop-page .shop-nav-left a,
+  .shop-page .shop-nav-right a,
+  .contact-page .contact-nav-left a,
+  .contact-page .contact-nav-right a {
+    min-width: 0;
+    min-height: 44px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .shop-page .shop-footer-ladybug,
+  .contact-page .shop-footer-ladybug {
+    width: 180px;
+    left: -10px;
+    bottom: 75px;
+  }
+
+  .shop-page .shop-footer-flower,
+  .contact-page .shop-footer-flower {
+    width: 70px;
+    right: 0;
+    bottom: 4px;
+    z-index: 5;
+  }
+
+  .shop-page .shop-footer-heart,
+  .contact-page .shop-footer-heart {
+    font-size: 0;
+    color: #ee777b;
+    line-height: 1;
+  }
+
+  .shop-page .shop-footer-heart::before,
+  .contact-page .shop-footer-heart::before {
+    content: "\2665\FE0E";
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1;
+  }
+}

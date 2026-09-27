@@ -29,6 +29,8 @@ import aboutDecor from "./assets/about-ladybug.svg"
 
 import newsletterFlowers from "./assets/newsletter-flowers.svg"
 
+import mobileLogo from "./assets/ladybug-lane-logo-cropped.svg"
+
 import { FaInstagram, FaPinterestP, FaTiktok } from "react-icons/fa"
 
 function HomePage() {
@@ -192,11 +194,14 @@ function HomePage() {
 
           {/* Logo */}
           <a href="#home" className="brand">
-            <img
-              src={logo}
-              alt="Ladybug Lane Crochet"
-              className="brand-logo"
-            />
+            <picture>
+              <source media="(max-width: 650px)" srcSet={mobileLogo} />
+              <img
+                src={logo}
+                alt="Ladybug Lane Crochet"
+                className="brand-logo"
+              />
+            </picture>
           </a>
 
           {/* Navigation */}

@@ -1387,10 +1387,12 @@
 
   .contact-page .contact-hero-note {
     width: min(240px, 85%);
+    margin-top: -45px;
+    margin-bottom: -45px;
   }
 
   .contact-page .contact-hero-description {
-    margin-top: 16px;
+    margin-top: 8px;
     font-size: 16px;
     line-height: 1.65;
   }
@@ -1551,6 +1553,7 @@
 
   .contact-page .shop-footer {
     height: 170px;
+    background: #fffdf8;
   }
 
   .contact-page .shop-footer-wave {

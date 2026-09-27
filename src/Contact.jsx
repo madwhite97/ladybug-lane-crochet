@@ -2,7 +2,7 @@ import "./Contact.css"
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { FaInstagram, FaPinterestP, FaTiktok } from "react-icons/fa"
-import { FiShoppingBag } from "react-icons/fi"
+import { FiShoppingBag, FiMail } from "react-icons/fi"
 
 import logo from "./assets/ladybug-lane-logo.svg"
 import shopLeaf from "./assets/shop-leaf.svg"
@@ -185,7 +185,7 @@ function Contact() {
 
                     <p className="contact-hero-description">
                         Have a question, custom request, or just want to say hi?
-                        <br />
+                        {" "}<br />
                         I'd love to hear from you!
                     </p>
 
@@ -360,7 +360,7 @@ function Contact() {
 
                         <div className="contact-method">
                             <div className="contact-method-icon">
-                                ✉
+                                <FiMail aria-hidden="true" />
                             </div>
 
                             <div>
