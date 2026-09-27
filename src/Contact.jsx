@@ -136,7 +136,7 @@ function Contact() {
 
                 <div className="contact-nav-right">
                     <Link to="/coming-soon">CUSTOMS</Link>
-                    <Link to="/faq">FAQ</Link>
+                    <Link to="/coming-soon">FAQ</Link>
                     <Link to="/contact">CONTACT</Link>
 
                     <Link to="/cart" className="shop-cart-link">
