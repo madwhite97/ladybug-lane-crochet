@@ -1631,4 +1631,41 @@
     gap: 18px;
     z-index: 6;
   }
+
+  .contact-page .contact-hero-note {
+    margin-bottom: -65px;
+  }
+
+  .shop-page .shop-footer .shop-footer-heart,
+  .contact-page .shop-footer .shop-footer-heart,
+  .contact-page .contact-thank-you .contact-thank-you-heart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: #efa8a8;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .shop-page .shop-footer .shop-footer-heart::before,
+  .contact-page .shop-footer .shop-footer-heart::before,
+  .contact-page .contact-thank-you .contact-thank-you-heart::before {
+    content: none;
+  }
+
+  .shop-page .shop-footer-heart svg,
+  .contact-page .shop-footer-heart svg,
+  .contact-page .contact-thank-you-heart svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+
+  .shop-page .shop-footer .shop-footer-text,
+  .contact-page .shop-footer .shop-footer-text {
+    gap: 10px;
+  }
 }

@@ -2533,6 +2533,11 @@ body {
     transform: none;
   }
 
+  .home-page .footer-top > .footer-brand {
+    margin-top: -25px !important;
+    margin-bottom: -25px !important;
+  }
+
   .shop-page .shop-navbar,
   .contact-page .contact-navbar {
     row-gap: 10px;

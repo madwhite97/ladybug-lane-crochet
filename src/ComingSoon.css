@@ -557,9 +557,10 @@
 /* Polishes & Overwrites */
 
 @media (max-width: 650px) {
-  .comping-page .coming-right-group {
+  .coming-page .coming-right-group {
     width: min(280px, 78vw);
     margin: 24px auto 0;
+    margin-top: 4px;
   }
 
   .coming-page .coming-right-group picture {
@@ -571,5 +572,14 @@
     display: block;
     width: 100%;
     height: auto;
+  }
+  
+  .coming-page .coming-logo-wrap {
+    margin-top: -25px;
+    margin-bottom: -1px;
+  }
+
+  .coming-page .coming-bottom-wave {
+    margin-top: 4px;
   }
 }

@@ -1654,9 +1654,13 @@ function Shop() {
 
                 <div className="shop-footer-text">
                     <span>CROCHET</span>
-                    <span className="shop-footer-heart">♥</span>
+                    <span className="shop-footer-heart">
+                        <FaHeart aria-hidden="true" />
+                    </span>
                     <span>CREATE</span>
-                    <span className="shop-footer-heart">♥</span>
+                    <span className="shop-footer-heart">
+                        <FaHeart aria-hidden="true" />
+                    </span>
                     <span>BELONG</span>
                 </div>
 

@@ -1,7 +1,7 @@
 import "./Contact.css"
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { FaInstagram, FaPinterestP, FaTiktok } from "react-icons/fa"
+import { FaInstagram, FaPinterestP, FaTiktok, FaHeart } from "react-icons/fa"
 import { FiShoppingBag, FiMail } from "react-icons/fi"
 
 import logo from "./assets/ladybug-lane-logo.svg"
@@ -446,7 +446,9 @@ function Contact() {
 
                         <p>FOR SUPPORTING MY SMALL BUSINESS!</p>
 
-                        <span className="contact-thank-you-heart">♥</span>
+                        <span className="contact-thank-you-heart">
+                            <FaHeart aria-hidden="true" />
+                        </span>
                     </div>
 
                 </div>
@@ -491,9 +493,13 @@ function Contact() {
 
                 <div className="shop-footer-text">
                     <span>CROCHET</span>
-                    <span className="shop-footer-heart">♥</span>
+                    <span className="shop-footer-heart">
+                        <FaHeart aria-hidden="true" />
+                    </span>
                     <span>CREATE</span>
-                    <span className="shop-footer-heart">♥</span>
+                    <span className="shop-footer-heart">
+                        <FaHeart aria-hidden="true" />
+                    </span>
                     <span>BELONG</span>
                 </div>
 
