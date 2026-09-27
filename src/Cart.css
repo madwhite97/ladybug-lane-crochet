@@ -561,3 +561,23 @@
     line-height: 1.7;
   }
 }
+
+/* Polishes & Overwrites */
+
+.cart-page .cart-checkout-mobile {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .cart-page .cart-checkout-desktop {
+    display: none;
+  }
+
+  .cart-page .cart-checkout-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+  }
+}

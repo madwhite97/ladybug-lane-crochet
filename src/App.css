@@ -2595,4 +2595,34 @@ body {
     font-size: 18px;
     line-height: 1;
   }
+
+  .shop-page .shop-navbar,
+  .contact-page .contact-navbar {
+    height: auto;
+    row-gap: 0;
+    padding: 16px 18px 8px;
+  }
+
+  .shop-page .shop-nav-logo-link,
+  .contact-page .contact-nav-logo-link {
+    width: min(250px, 80%);
+    margin: 0 auto 12px;
+  }
+
+  .shop-page .shop-nav-logo-link picture,
+  .contact-page .contact-nav-logo-link picture {
+    display: block;
+    width: 100%;
+  }
+
+  .shop-page .shop-nav-logo,
+  .contact-page .contact-nav-logo {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    margin: 0;
+    transform: none;
+  }
 }

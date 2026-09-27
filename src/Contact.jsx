@@ -15,6 +15,7 @@ import shopFooterFlower from "./assets/shop-footer-flower.svg"
 import shopMushroom from "./assets/shop-mushroom.svg"
 import shopLadybug from "./assets/shop-ladybug.svg"
 import divider from "./assets/contact-divider.svg"
+import mobileLogo from "./assets/ladybug-lane-logo-cropped.svg"
 
 import puppy from "./assets/puppy.jpg"
 
@@ -123,11 +124,14 @@ function Contact() {
                 </div>
 
                 <Link to="/" className="contact-nav-logo-link">
-                    <img
-                        src={logo}
-                        alt="Ladybug Lane Crochet"
-                        className="contact-nav-logo"
-                    />
+                    <picture>
+                        <source media="(max-width: 650px)" srcSet={mobileLogo} />
+                        <img
+                            src={logo}
+                            alt="Ladybug Lane Crochet"
+                            className="contact-nav-logo"
+                        />
+                    </picture>
                 </Link>
 
                 <div className="contact-nav-right">

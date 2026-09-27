@@ -19,6 +19,7 @@ import shopFlowerIcon from "./assets/shop-category-flower.svg"
 import footerWave from "./assets/shop-wave.svg"
 import shopLadybug from "./assets/shop-ladybug.svg"
 import shopFooterFlower from "./assets/shop-footer-flower.svg"
+import mobileLogo from "./assets/ladybug-lane-logo-cropped.svg"
 
 import arielHat from "./assets/ariel-hat.jpg"
 import basket from "./assets/basket.jpg"
@@ -1255,11 +1256,14 @@ function Shop() {
                 </div>
 
                 <Link to="/" className="shop-nav-logo-link">
-                    <img
-                        src={logo}
-                        alt="Ladybug Lane Crochet"
-                        className="shop-nav-logo"
-                    />
+                    <picture>
+                        <source media="(max-width: 650px)" srcSet={mobileLogo} />
+                        <img
+                            src={logo}
+                            alt="Ladybug Lane Crochet"
+                            className="shop-nav-logo"
+                        />
+                    </picture>
                 </Link>
 
                 <div className="shop-nav-right">
@@ -1336,6 +1340,25 @@ function Shop() {
                 </div>
 
                 <div className="shop-hero-image">
+
+                    <svg
+                        className="shop-photo-top-wave"
+                        viewBox="0 0 1440 90"
+                        preserveAspectRatio="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="
+                                M0,0 H1440 V45
+                                C1320,80 1200,10 1080,45
+                                C960,80 840,10 720,45
+                                C600,80 480,10 360,45
+                                C240,80 120,10 0,45
+                                Z
+                            "
+                            fill="#f6eee3"
+                        />
+                    </svg>
 
                     <img
                         src={heroBlanket}

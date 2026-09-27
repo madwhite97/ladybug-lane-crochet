@@ -10,6 +10,7 @@ import handmadeNote from "./assets/coming-soon-note.svg"
 import rightDecor from "./assets/coming-soon-right-decor.svg"
 import waveHeart from "./assets/coming-soon-wave-heart.svg"
 import bottomWave from "./assets/coming-soon-bottom-wave.jpg"
+import mobileLadybug from "./assets/shop-ladybug.svg"
 
 function ComingSoon() {
 
@@ -110,11 +111,17 @@ function ComingSoon() {
 
             {/* Right artwork */}
             <div className="coming-right-group">
-                <img
-                    src={rightDecor}
-                    alt=""
-                    className="coming-right-decor"
-                />
+                <picture>
+                    <source
+                        media="(max-width: 650px)"
+                        srcSet={mobileLadybug}
+                    />
+                    <img
+                        src={rightDecor}
+                        alt=""
+                        className="coming-right-decor"
+                    />
+                </picture>
             </div>
 
             {/* Yellow Wave */}

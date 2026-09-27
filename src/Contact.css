@@ -1598,3 +1598,37 @@
     text-align: center;
   }
 }
+
+/* Polishes & Overwrites */
+@media (max-width: 650px) {
+
+  .shop-page .shop-footer-ladybug,
+  .contact-page .shop-footer .shop-footer-ladybug {
+    width: 200px;
+    max-width: 58vw;
+    height: auto;
+    left: -10px;
+    bottom: 75px;
+  }
+
+  .shop-page .shop-footer .shop-footer-flower,
+  .contact-page .shop-footer .shop-footer-flower {
+    width: 65px;
+    height: auto;
+    right: 4px;
+    bottom: 4px;
+    z-index: 5;
+  }
+
+  .shop-page .shop-footer .shop-footer-heart,
+  .contact-page .shop-footer .shop-footer-heart {
+    display: none;
+  }
+
+  .shop-page .shop-footer .shop-footer-text,
+  .contact-page .shop-footer .shop-footer-text {
+    bottom: 42px;
+    gap: 18px;
+    z-index: 6;
+  }
+}

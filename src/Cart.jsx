@@ -179,9 +179,19 @@ function Cart() {
                             <span>${subtotal.toFixed(2)}</span>
                         </div>
 
-                        <button className="cart-checkout">
+                        <button
+                            type="button"
+                            className="cart-checkout cart-checkout-desktop"
+                        >
                             CHECKOUT →
                         </button>
+
+                        <Link
+                            to="/coming-soon"
+                            className="cart-checkout cart-checkout-mobile"
+                        >
+                            CHECKOUT →
+                        </Link>
 
                         <Link
                             to="/shop"

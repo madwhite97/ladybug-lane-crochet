@@ -553,3 +553,23 @@
     margin-top: 24px;
   }
 }
+
+/* Polishes & Overwrites */
+
+@media (max-width: 650px) {
+  .comping-page .coming-right-group {
+    width: min(280px, 78vw);
+    margin: 24px auto 0;
+  }
+
+  .coming-page .coming-right-group picture {
+    display: block;
+    width: 100%;
+  }
+
+  .coming-page .coming-right-decor {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
