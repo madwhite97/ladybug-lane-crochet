@@ -1776,4 +1776,15 @@
   .contact-page .shop-footer .shop-footer-flowers {
     bottom: 35px;
   }
+
+  .shop-page .shop-footer .shop-footer-flowers,
+  .contact-page .shop-footer .shop-footer-flowers {
+    bottom: 20px;
+    right: 18px;
+  }
+
+  .contact-page .contact-image-doodle {
+    top: 5px;
+    right: -20px;
+  }
 }

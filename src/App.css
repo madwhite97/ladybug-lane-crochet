@@ -2696,4 +2696,9 @@ body {
     line-height: 1;
     color: #c96f68;
   }
+
+  .home-page .hero-corner-flower-large {
+    width: 135px;
+    height: auto;
+  }
 }
